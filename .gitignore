@@ -1,0 +1,21 @@
+# Environment variables
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+
+# Vector DB
+paper_vectors/
+
+# IDE
+.vscode/
+.idea/
+
+# Output files
+results_*/

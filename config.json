@@ -1,0 +1,59 @@
+{
+    "data": {
+        "required_fields": [
+            "Title",
+            "Abstract",
+            "Year",
+            "Document Type",
+            "Cited by",
+            "Author Keywords",
+            "DOI",
+            "Link"
+        ]
+    },
+    "filters": {
+        "year": {
+            "min": 2019,
+            "max": 2025
+        },
+        "citations": {
+            "min": 1
+        },
+        "document_types": [
+            "Article",
+            "Conference Paper"
+        ],
+        "language": "English"
+    },
+    "scoring": {
+        "keyword_weight": 0.35,
+        "semantic_weight": 0.65,
+        "similarity_threshold": 0.4,
+        "keyword_hierarchy": {
+            "primary_weight": 0.7,
+            "secondary_weight": 0.3
+        }
+    },
+    "model": {
+        "name": "all-MiniLM-L6-v2"
+    },
+    "research": {
+        "objective": "Analyzing deep learning approaches for fake news detection, including neural networks, transformers, and other advanced machine learning techniques for identifying misinformation in digital content.",
+        "keywords": {
+            "primary": [
+                "fake news detection",
+                "deep learning"
+            ],
+            "secondary": [
+                "neural networks",
+                "misinformation",
+                "transformers",
+                "classification",
+                "fact checking",
+                "NLP",
+                "social media",
+                "disinformation"
+            ]
+        }
+    }
+}
